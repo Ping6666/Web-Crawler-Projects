@@ -2,10 +2,10 @@ import os
 import requests
 from bs4 import BeautifulSoup
 from urllib.request import urlretrieve
-
 """
 @author: Ping
 """
+
 
 def getURLFromWebsite(url_, inputfiles_):
     page_count, url_count = 0, 0
