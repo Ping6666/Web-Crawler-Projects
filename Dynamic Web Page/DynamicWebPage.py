@@ -7,10 +7,10 @@ from selenium.webdriver.chrome.options import Options
 
 from PIL import Image
 from PIL import ImageFile
-
 """
 @author: Ping
 """
+
 
 def getBookURLFromWebsite(FilePath_, urlOriginal_):
     options = Options()
