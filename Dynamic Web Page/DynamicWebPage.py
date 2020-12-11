@@ -8,6 +8,9 @@ from selenium.webdriver.chrome.options import Options
 from PIL import Image
 from PIL import ImageFile
 
+"""
+@author: Ping
+"""
 
 def getBookURLFromWebsite(FilePath_, urlOriginal_):
     options = Options()
@@ -126,7 +129,8 @@ def savePictureToPDF(inputPicFiles_, PicPathBase_):
 
 
 # pre stage
-url_FileName = "url-1.txt"
+url_FileName = "url.txt"
+pic_FileName = "pic.txt"
 FilePath = "D:/Programming/Python/WebCrawler/chromedriver.exe"
 urlBase = "https://www.manhuaren.com/"
 urlOriginal = "https://www.manhuaren.com/manhua-jinjidejuren/"
@@ -145,12 +149,12 @@ inFile.close()
 outFile.close()
 
 # stage 2
-inFile_pic = open("url-1.txt", 'r')
+inFile_pic = open(url_FileName, 'r')
 inputFile_pic = inFile_pic.read()
 pics = inputFile_pic.split("\n")
 
-outPicFile = open("pic-1.txt", 'a')
-inPicFile = open("pic-1.txt", 'r')
+outPicFile = open(pic_FileName, 'a')
+inPicFile = open(pic_FileName, 'r')
 inputPicFile = inPicFile.read()
 inputPicFiles = inputPicFile.split("\n")
 
@@ -163,7 +167,7 @@ outPicFile.close()
 # stage 3
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
-inPicFile = open("pic-1.txt", 'r')
+inPicFile = open(pic_FileName, 'r')
 inputPicFile = inPicFile.read()
 inputPicFiles = inputPicFile.split("\n")
 
