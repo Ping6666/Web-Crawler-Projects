@@ -23,7 +23,7 @@ def getBookURLFromWebsite(FilePath_, urlOriginal_):
     newChromeWindow.close()
 
     urlResults = []
-    # 1 for 話 2 for 卷
+    # id: 1 for 話 or 連載, 2 for 卷, 3 for 番外.
     result = str(soup.find(id="detail-list-select-2"))
     while result.find(" href") != -1:
         result = result[result.find(" href") + 5:]
