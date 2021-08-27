@@ -43,3 +43,7 @@ If you are trying to use this code against the copyright law where you are or th
 ### Website
 
 [漫画人 - 为爱漫画的人而生](https://www.manhuaren.com/)
+
+## Related Project
+
+[Program 2 - Threading Programming](https://github.com/Ping6666/Operating-System-Projects/blob/main/Program%202%20-%20Threading%20Programming/README.md)
